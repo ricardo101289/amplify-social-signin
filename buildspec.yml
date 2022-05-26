@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12.x
+      python: 3.x
+    commands:
+      - npm install next
+  # pre_build:
+  #   commands:
+  #     - pre-commit install
+  #     - pre-commit run --all-files
+  build:
+    commands:
+      - npm run build
